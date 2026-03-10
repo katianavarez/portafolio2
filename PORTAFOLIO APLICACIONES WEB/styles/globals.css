@@ -1,0 +1,50 @@
+/* ============================
+   IMPORTACIÓN DE FUENTES
+   ============================ */
+
+/* Importa la fuente Quicksand desde Google Fonts
+   Disponible en pesos de 300 a 700 */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Importa la fuente Playfair Display
+   Disponible en pesos de 400 a 700 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
+/* ============================
+   VARIABLES GLOBALES
+   ============================ */
+
+:root {
+    --color-fondo: #d8e2dc;      /* Color de fondo */
+    --color-seccion: #ffe5d9;    /* Color de fondo para secciones */
+    --color-rosita: #ffcad4;     /* Color rosa suave */
+    --color-rosa: #f4acb7;       /* Color rosa medio */
+    --color-mauve: #9d8189;      /* Color mauve oscuro */
+    --texto-oscuro: #3d2b2e;     /* Color principal del texto */
+    --texto-medio: #5c4a50;      /* Color secundario del texto */
+}
+
+
+/* ============================
+   RESET BÁSICO DE ESTILOS
+   ============================ */
+
+body, main, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ============================
+   ESTILOS PARA ENLACES
+   ============================ */
+
+a {
+    color: var(--color-mauve);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--texto-oscuro);
+}

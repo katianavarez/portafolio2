@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+        <meta name = "description" content = "Portafolio profesional de Ingeniero en Software.">
+        <meta name = "keywords" content="portafolio, ingeniero en software, ti, desarrollo web">
+        <meta name = "author" content="Katia Ximena Návarez Espinoza">
+        <meta name = "robots" content="index, follow">
+        <title>
+            Portafolio Profesional Katia Návarez
+        </title>
+        <link rel = "icon" type = "image/png" href="">
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+
+    <body>
+        <header>
+             <div>
+                <h1>
+                    Katia Ximena Návarez Espinoza
+                </h1>
+                <p>
+                    Estudiante de Ingeniería en Software
+                </p>
+             </div>
+
+               <nav>
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">Sobre mí</a>
+                    <a href="./skills.html">Habilidades</a>
+                    <a href="./formacion.html">Formación</a>
+                    <a href="./projects.html">Proyectos</a>
+                    <a href="./contact.html">Contacto</a>
+               </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Formulario de contacto</h2>
+
+                <form action="https://mibackend.com/contacto" method="post">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Katia Návarez">
+                    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">
+                    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" pattern="[0-9]{10}">
+
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="1" max="100" required>
+
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select name="motivo" id="motivo">
+                        <option value="">Seleccione una opción</option>
+                        <option value="trabajo">Trabajo</option>
+                        <option value="clases">Clases</option>
+                        <option value="asesorias">Asesorías</option>
+                    </select>
+
+                    <label for="metodo-contacto">¿Cómo te gustaría que te contacte?:</label>
+                    <br>
+                    <!-- Tienen que tener el mismo name si quieres que solo 
+                        deje seleccionar 1 -->
+                    <input type="radio" id="contacto-correo" name="metodo-contacto" value="correo">
+                    <label for="contacto-correo">Correo.</label>
+                    <input type="radio" id="contacto-wha" name="metodo-contacto" value="whatsapp">
+                    <label for="contacto-wha">Whatsapp.</label>
+
+                    <!-- Se puede poner <button type="submit"> pero no es
+                        necesario porque el botón ya está dentro del formulario -->
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escribe tu mensaje aquí."></textarea>
+
+                    <br>
+                    <br>
+                    <button type="submit">Guardar</button>
+                    <br>
+                    <button type="reset">Limpiar</button>
+                </form>
+            </section>
+            
+        </main>    
+
+            <footer>
+                <section>
+                    Sígueme en mis redes:<br>
+                    <a href="https://www.instagram.com/katianavarez?igsh=aGt5bjVoN3ltcWh4&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a><br>
+                    <a href="https://www.facebook.com/share/1BMZuU6zKU/?mibextid=wwXIfr">Facebook</a>
+                </section>
+
+                <p>
+                    &copy; 2026 Katia Ximena Návarez Espinoza. Todos los derechos reservados
+                </p>
+            </footer>
+    </body>
+</html>
